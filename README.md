@@ -9,7 +9,7 @@
 </h1>
 ## 🚀 Thanks for stopping by!
 
-We use Gatsby and other headless technology to create blazing fast websites.
+We use Gatsby and other Jamstack technology to create blazing fast websites.
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
