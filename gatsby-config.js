@@ -81,7 +81,7 @@ module.exports = {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         // Find the Google Tag Manager ID on
-        id: "GTM-5MMVT2",
+        id: "GTM-TCK3QP",
         includeInDevelopment: false,
         defaultDataLayer: { platform: `gatsby` },
         enableWebVitalsTracking: true,
