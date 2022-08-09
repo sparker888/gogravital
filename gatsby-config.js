@@ -8,7 +8,7 @@ module.exports = {
       twitter: `https://twitter.com/gogravital/`,
     },
     locale: `en`,
-    title: `@gogravital | Website Developers`,
+    title: `Gravital Digital | Website Developers`,
     titleTemplate: `Gravital Digital | Website Developers`,
     description: `Blazing fast websites powered by Jamstack.`,
     siteUrl: `https://www.gravitaldigital.com`, // No trailing slash allowed!

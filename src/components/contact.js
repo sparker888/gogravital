@@ -1,5 +1,5 @@
 import * as React from "react"
-import { MailIcon, PhoneIcon } from "@heroicons/react/outline"
+import { MailIcon, PhoneIcon, CalendarIcon } from "@heroicons/react/outline"
 import { useStaticQuery, graphql } from "gatsby"
 import { getImage, StaticImage } from "gatsby-plugin-image"
 
@@ -85,6 +85,23 @@ export default function Contact() {
                     aria-hidden="true"
                   />
                   <span className="ml-3 font-body">go@gravitaldigital.com</span>
+                </dd>
+                <dt>
+                  <span className="sr-only">Calendar Link</span>
+                </dt>
+                <dd className="flex text-base text-sky-200">
+                  <CalendarIcon
+                    className="h-6 w-6 flex-shrink-0 text-amber-600"
+                    aria-hidden="true"
+                  />
+                  <a
+                    className="group text-amber-600 hover:text-sky-200"
+                    href="https://calendly.com/sparker888/"
+                  >
+                    <span className="ml-3 font-body">
+                      Book a 30-min. meeting
+                    </span>
+                  </a>
                 </dd>
               </dl>
             </div>
