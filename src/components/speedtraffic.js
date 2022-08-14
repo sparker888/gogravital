@@ -90,7 +90,7 @@ const pluginImage = getImage(backgroundImageTraffic)
                   </div>
                   <h2 className="lg:ml-22 my-0 ml-10 text-xl font-bold text-sky-50 sm:my-11 sm:ml-44 sm:text-2xl md:ml-24 lg:my-12 lg:text-3xl xl:ml-10">
                     vs.{" "}
-                    <span className="bg-gradient-to-br from-purple-700 to-red-700 bg-clip-text pr-1 font-logo text-2xl font-black tracking-normal text-transparent sm:text-4xl lg:text-5xl">
+                    <span className="bg-gradient-to-br from-purple-500 to-red-500 bg-clip-text pr-1 font-logo text-2xl font-black tracking-normal text-transparent sm:text-4xl lg:text-5xl">
                       JamStack{" "}
                     </span>
                   </h2>
