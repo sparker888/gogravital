@@ -29,8 +29,8 @@ import Contact from "../components/contact"
 const Home = () => {
   return (
     <Layout>
-    <>
-      <Seo />
+      <>
+        <Seo />
         <div className="max-w-xl bg-black">
           <Hero className="z-index-2" />
           <ScrollButton />
