@@ -19,7 +19,7 @@ const supportLinks = [
     name: "Website Design & Build",
     href: "/#contact",
     description:
-      "Have your website designed and built using the latest proven front-end design and development technology. We’re happy to show you how it’s done.",
+      "Upgrade your old website from slow, outdated platforms like WordPress to blazing fast Jamstack architecture for improved UX and higher conversions.",
     icon: LightBulbIcon,
   },
   {
