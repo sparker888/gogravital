@@ -23,14 +23,14 @@ const supportLinks = [
     icon: LightBulbIcon,
   },
   {
-    name: "CMS & API Management",
+    name: "CMS, CRM & Email Setup",
     href: "/#contact",
     description:
-      "Modern websites and apps rely on many services including content systems and third-party data. We help manage these resources effectively.",
+      "For the full content-driven SEO sales program, we can set up your preferred CMS, CRM and Email platforms. We are Contentful, HubSpot and Mailchimp experts.",
     icon: CursorClickIcon,
   },
   {
-    name: "Analytics & Data Analysis",
+    name: "Analytics & Reports Setup",
     href: "/#contact",
     description:
       "Collecting and analyzing website and app data is critically important to making informed digital marketing decisions. We’re data experts.",
