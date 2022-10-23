@@ -38,13 +38,13 @@ const Hero = () => {
         <div className="relative px-4 pt-40 sm:px-6 sm:pt-36 lg:px-8 lg:pt-48">
           <h1 className="pt-6 text-center sm:pt-16 md:pt-28 lg:pt-36 xl:pt-48 2xl:pt-60">
             <span className="bg-gradient-to-br from-purple-700 to-red-700 bg-clip-text pb-2 text-5xl font-black text-transparent sm:pb-4 sm:text-6xl md:text-6xl lg:text-8xl xl:text-8xl 2xl:text-9xl">
-              Blazing Fast!
+              Light. Speed.
             </span>
           </h1>
 
           <h3 className="mx-4 mt-6 text-center font-body text-xl font-bold leading-tight text-slate-200 sm:mx-12 sm:text-2xl md:mx-16 lg:text-3xl xl:mx-24 2xl:mx-36">
             Whether it's a content marketing website or a dynamic eCommerce app,
-            Gravital builds sites with{" "}
+            Gravital builds lightweight sites with{" "}
             <span className="bg-gradient-to-br from-purple-500 to-red-500 bg-clip-text font-logo text-2xl font-black tracking-normal text-transparent lg:text-3xl">
               JamStack{" "}
             </span>

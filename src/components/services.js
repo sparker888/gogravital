@@ -19,7 +19,7 @@ const supportLinks = [
     name: "Website Design & Build",
     href: "/#contact",
     description:
-      "Upgrade your old website from slow, outdated platforms like WordPress to blazing fast Jamstack architecture for improved UX and higher conversions.",
+      "Upgrade your old website from slow, outdated platforms like WordPress to light and fast Jamstack architecture for improved UX and higher conversions.",
     icon: LightBulbIcon,
   },
   {
@@ -94,8 +94,8 @@ export default function Services() {
             </span>
           </h1>
           <p className="max-w-xl mt-6 font-body text-xl leading-10 text-gray-300 lg:max-w-[50%] lg:text-2xl">
-            Realize the potential of your website to deliver blazing speed,
-            higher Google rankings, a great user experience, and higher
+            Realize the potential of your website to deliver fast load times,
+            higher Google rankings, better user experiences, and higher
             conversion rates. We have the full range of services to support
             content marketing and eCommerce driven sites.
           </p>
