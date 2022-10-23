@@ -48,7 +48,7 @@ const Hero = () => {
             <span className="bg-gradient-to-br from-purple-500 to-red-500 bg-clip-text font-logo text-2xl font-black tracking-normal text-transparent lg:text-3xl">
               JamStack{" "}
             </span>
-            for incredibly fast load times that crush SEO and deliver memorable
+            for incredibly fast load times that crush SEO and deliver delightful
             user experiences.
           </h3>
           <h2 className="pt-12 text-center sm:pt-4 md:pt-6 lg:pt-6 xl:pt-8 2xl:pt-12">
