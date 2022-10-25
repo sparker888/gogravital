@@ -22,8 +22,8 @@ export default function Technologies() {
             </div>
             <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
               <img
-                className="h-16"
-                src="https://res.cloudinary.com/gravital-digital/image/upload/v1651521248/gatsby-logo-400x100_jz5fnr.svg"
+                className="h-12"
+                src="https://res.cloudinary.com/gravital-digital/image/upload/v1666724000/2022-nextjs-logo-white_vwidj2.svg"
                 alt="Next.js Logo"
               />
             </div>
