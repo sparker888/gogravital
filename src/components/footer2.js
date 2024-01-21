@@ -84,7 +84,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
           <p className="text-center font-body text-base font-normal text-sky-500">
-            &copy; 2022 Gravital Digital, Inc.
+            &copy; 2024 Gravital Digital, Inc.
           </p>
         </div>
       </div>
