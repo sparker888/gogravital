@@ -32,7 +32,7 @@ const Home = () => {
       <>
         <Seo />
         <div className="max-w-xl bg-black">
-          <Hero className="z-index-2" />
+          <Hero className="video-container" />
           <ScrollButton />
           <Potential />
           <Speed />

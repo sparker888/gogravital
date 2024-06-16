@@ -3,3 +3,9 @@
 @tailwind utilities;
 
 @import url("https://use.typekit.net/zxh8jgs.css");
+
+.video-container {
+    position: relative;
+    top: -50px;
+    /* Adjust this value as needed */
+}
