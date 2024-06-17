@@ -2,6 +2,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import ScrollButton from "../components/scrollup"
+import Banner from "../components/banner"
 import Hero from "../components/hero"
 import Potential from "../components/potential"
 import Speed from "../components/speed"
@@ -32,6 +33,7 @@ const Home = () => {
       <>
         <Seo />
         <div className="max-w-xl bg-black">
+          <Banner />
           <Hero className="video-container" />
           <ScrollButton />
           <Potential />
