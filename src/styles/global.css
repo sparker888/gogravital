@@ -10,6 +10,6 @@
     /* Adjust this value as needed */
 }
 .custom-max-w {
-    max-width: 48rem;
+    max-width: 72rem;
     /* This is the value of max-w-xl in Tailwind */
 }

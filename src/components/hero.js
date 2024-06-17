@@ -86,10 +86,7 @@ const Hero = () => {
               onError={e => console.error(`Error loading video ${i + 1}`, e)}
               style={{ zIndex: 10 - Math.floor(i / 2) }} // Adjust zIndex so older videos are on top
             >
-              <source
-                src={`/videos/clip-${(i % 8) + 1}.mp4`}
-                type="video/mp4"
-              />
+              <source src={`/videos/clip-${i + 1}.mp4`} type="video/mp4" />
             </video>
           )
         )}
@@ -100,9 +97,9 @@ const Hero = () => {
             Light. Speed.
           </span>
         </h1>
-        <h3 className="custom-max-w mx-auto mt-6 text-center font-body text-2xl text-xl font-bold leading-tight text-slate-200">
+        <h3 className="custom-max-w mx-auto mt-6 text-center font-body text-3xl font-bold leading-tight text-slate-200">
           Gravital builds lightweight sites with{" "}
-          <span className="bg-gradient-to-br from-purple-500 to-red-500 bg-clip-text font-logo text-2xl font-black tracking-normal text-transparent lg:text-3xl">
+          <span className="bg-gradient-to-br from-purple-500 to-red-500 bg-clip-text font-logo text-3xl font-black tracking-normal text-transparent lg:text-3xl">
             JamStack{" "}
           </span>
           for incredibly fast load times that crush KPIs and deliver delightful

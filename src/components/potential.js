@@ -7,7 +7,7 @@ export default function Potential() {
         <h2 className="bg-gradient-to-br from-white to-amber-500 bg-clip-text text-5xl font-black text-transparent sm:text-6xl md:text-6xl lg:text-8xl xl:text-8xl 2xl:text-9xl">
           <span className="mt-12 block">Modernize your website</span>
           <span className="block bg-gradient-to-br from-white via-amber-500 to-orange-500 bg-clip-text text-transparent">
-            for the best performance
+            for top performance
           </span>
         </h2>
       </div>
