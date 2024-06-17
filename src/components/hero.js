@@ -10,78 +10,84 @@ const Hero = () => {
     }
   }
 
-  
   const createAnimation = (videos, delay, zIndex) => {
     videos.forEach((video, index) => {
       const isLeft = index % 2 === 0
       const direction = isLeft ? "-" : ""
-      const startPos = isLeft ? "-100px" : "100px"
-      const endPos = isLeft ? "-300%" : "300%" // Ensure videos go completely off the edge
+      const startPos = isLeft ? "-150px" : "150px"
+      const endPos = isLeft ? "-500%" : "500%" // Ensure videos go completely off the edge
 
       gsap
         .timeline({ repeat: -1, repeatDelay: 0, delay })
-        .set(video, { x: startPos, zIndex })
+        .set(video, { x: startPos, zIndex, opacity: 1 })
         .fromTo(
           video,
-          { scale: 1, opacity: 0, x: startPos }, // Start with opacity 0
+          { scale: 1, opacity: 1, x: startPos },
           {
-            scale: 2,
-            opacity: 1, // Fade in to opacity 1
-            x: `${direction}300%`, // Ensure videos go completely off the edge
-            duration: 8,
-            ease: "power3.inOut", // Maintain constant speed
+            scale: 2.75,
+            opacity: 1,
+            x: `${direction}500%`, // Continuous movement
+            duration: 6, // Faster duration for quicker flow
+            ease: "none", // Remove easing to keep a constant speed
           }
         )
         .to(
           video,
           {
             opacity: 0,
-            duration: 2,
+            duration: 0.5, // Fast fade-out duration
             ease: "none",
           },
-          "-=2"
-        ) // Start fading 2 seconds before the end of the animation
-        .set(video, { x: startPos, scale: 1, opacity: 0 })
+          "-=0.5" // Start fading 0.5 seconds before the end of the animation
+        )
+        .set(video, { x: startPos, scale: 1, opacity: 1 })
     })
   }
 
   useEffect(() => {
-    const layer1 = videoRefs.current.slice(0, 2)
-    const layer2 = videoRefs.current.slice(2, 4)
-    const layer3 = videoRefs.current.slice(4, 6)
+    const layers = []
+    for (let i = 0; i < videoRefs.current.length; i += 2) {
+      layers.push(videoRefs.current.slice(i, i + 2))
+    }
 
-    createAnimation(layer1, 0, 3)
-    createAnimation(layer2, 2.66, 2) // Adjusted delay for continuous flow
-    createAnimation(layer3, 5.33, 1) // Adjusted delay for continuous flow
+    layers.forEach((layer, index) => {
+      createAnimation(layer, index * 2, layers.length - index) // Set zIndex based on index
+    })
   }, [])
-
-
 
   return (
     <div className="relative h-full w-full bg-black">
       <div className="absolute inset-0 mt-[-75px] flex h-2/3 items-center justify-center overflow-hidden">
-        {[...Array(6)].map((_, i) => (
-          <video
-            key={i}
-            ref={addToRefs}
-            className="absolute h-32 w-56 rounded-lg object-cover"
-            autoPlay
-            loop
-            muted
-            onLoadedData={() => console.log(`Video ${i + 1} loaded`)}
-            onError={e => console.error(`Error loading video ${i + 1}`, e)}
-          >
-            <source src={`/videos/clip-${(i % 6) + 1}.mp4`} type="video/mp4" />
-          </video>
-        ))}
+        {[...Array(16)].map(
+          (
+            _,
+            i // Increased number of videos
+          ) => (
+            <video
+              key={i}
+              ref={addToRefs}
+              className="absolute h-32 w-56 rounded-lg object-cover"
+              autoPlay
+              loop
+              muted
+              onLoadedData={() => console.log(`Video ${i + 1} loaded`)}
+              onError={e => console.error(`Error loading video ${i + 1}`, e)}
+            >
+              <source
+                src={`/videos/clip-${(i % 8) + 1}.mp4`}
+                type="video/mp4"
+              />
+            </video>
+          )
+        )}
       </div>
-      <div className="sm:pt-120 relative z-10 px-4 pt-72 sm:px-6 lg:px-8 lg:pt-24">
+      <div className="sm:pt-120 relative z-10 px-4 pt-72 sm:px-6 lg:px-8 lg:pt-48">
         <h1 className="pt-6 text-center sm:pt-32 md:pt-48 lg:pt-36 xl:pt-60 2xl:pt-72">
           <span className="bg-gradient-to-br from-purple-700 to-red-700 bg-clip-text pb-2 text-5xl font-black text-transparent sm:pb-4 sm:text-6xl md:text-6xl lg:text-8xl xl:text-8xl 2xl:text-9xl">
             Light. Speed.
           </span>
         </h1>
-        <h3 className="max-w-2xl mx-auto mt-6 text-center font-body text-xl font-bold leading-tight text-slate-200 sm:mx-12 sm:text-2xl md:mx-16 lg:text-3xl xl:mx-24 2xl:mx-36">
+        <h3 className="custom-max-w mx-auto mt-6 text-center font-body text-3xl font-bold leading-tight text-slate-200">
           Gravital builds lightweight sites with{" "}
           <span className="bg-gradient-to-br from-purple-500 to-red-500 bg-clip-text font-logo text-2xl font-black tracking-normal text-transparent lg:text-3xl">
             JamStack{" "}
@@ -89,6 +95,7 @@ const Hero = () => {
           for incredibly fast load times that crush KPIs and deliver delightful
           & memorable user experiences.
         </h3>
+
         <h2 className="pt-12 text-center sm:pt-4 md:pt-6 lg:pt-6 xl:pt-8 2xl:pt-12">
           <span className="font-logo text-3xl font-bold tracking-tighter text-sky-600 md:text-4xl">
             Gravital
