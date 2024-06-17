@@ -13,3 +13,7 @@
     max-width: 72rem;
     /* This is the value of max-w-xl in Tailwind */
 }
+
+body {
+    background: black;
+}
