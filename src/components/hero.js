@@ -51,13 +51,25 @@ const Hero = () => {
     }
 
     layers.forEach((layer, index) => {
-      createAnimation(layer, index * 2, layers.length - index) // Set zIndex based on index
+      createAnimation(layer, index * 2, 10 - index) // Set zIndex based on index (older videos have higher zIndex)
     })
   }, [])
 
   return (
     <div className="relative h-full w-full bg-black">
-      <div className="absolute inset-0 mt-[-75px] flex h-2/3 items-center justify-center overflow-hidden">
+      <video
+        src="/gold-star.mp4"
+        className="absolute z-0 w-3/4 max-w-[750px]"
+        autoPlay
+        loop
+        muted
+        style={{
+          top: "calc(50% - 100px)", // Adjust this value to move the video up further
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+        }}
+      />
+      <div className="absolute inset-0 z-10 mt-[-75px] flex h-2/3 items-center justify-center overflow-hidden">
         {[...Array(16)].map(
           (
             _,
@@ -72,6 +84,7 @@ const Hero = () => {
               muted
               onLoadedData={() => console.log(`Video ${i + 1} loaded`)}
               onError={e => console.error(`Error loading video ${i + 1}`, e)}
+              style={{ zIndex: 10 - Math.floor(i / 2) }} // Adjust zIndex so older videos are on top
             >
               <source
                 src={`/videos/clip-${(i % 8) + 1}.mp4`}
@@ -81,13 +94,13 @@ const Hero = () => {
           )
         )}
       </div>
-      <div className="sm:pt-120 relative z-10 px-4 pt-72 sm:px-6 lg:px-8 lg:pt-48">
+      <div className="sm:pt-120 relative z-20 px-4 pt-72 sm:px-6 lg:px-8 lg:pt-24">
         <h1 className="pt-6 text-center sm:pt-32 md:pt-48 lg:pt-36 xl:pt-60 2xl:pt-72">
-          <span className="bg-gradient-to-br from-purple-700 to-red-700 bg-clip-text pb-2 text-5xl font-black text-transparent sm:pb-4 sm:text-6xl md:text-6xl lg:text-8xl xl:text-8xl 2xl:text-9xl">
+          <span className="lg:text-12xl bg-gradient-to-br from-purple-700 to-red-700 bg-clip-text pb-2 text-5xl font-black text-transparent sm:pb-4 sm:text-8xl md:text-8xl xl:text-8xl 2xl:text-9xl">
             Light. Speed.
           </span>
         </h1>
-        <h3 className="custom-max-w mx-auto mt-6 text-center font-body text-3xl font-bold leading-tight text-slate-200">
+        <h3 className="custom-max-w mx-auto mt-6 text-center font-body text-2xl text-xl font-bold leading-tight text-slate-200">
           Gravital builds lightweight sites with{" "}
           <span className="bg-gradient-to-br from-purple-500 to-red-500 bg-clip-text font-logo text-2xl font-black tracking-normal text-transparent lg:text-3xl">
             JamStack{" "}
