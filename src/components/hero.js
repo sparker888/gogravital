@@ -19,7 +19,7 @@ const Hero = () => {
 
       gsap
         .timeline({ repeat: -1, repeatDelay: 0, delay })
-        .set(video, { x: startPos, zIndex, opacity: 1 })
+        .set(video, { x: startPos, zIndex, opacity: 1, visibility: "visible" }) // Make video visible
         .fromTo(
           video,
           { scale: 1, opacity: 1, x: startPos },
@@ -80,7 +80,7 @@ const Hero = () => {
             <video
               key={i}
               ref={addToRefs}
-              className="absolute h-32 w-56 rounded-lg object-cover"
+              className="hidden-video absolute h-32 w-56 rounded-lg object-cover"
               autoPlay
               loop
               muted
