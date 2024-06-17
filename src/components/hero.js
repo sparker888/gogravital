@@ -56,7 +56,7 @@ const Hero = () => {
   }, [])
 
   return (
-    <div className="relative mt-12 h-full w-full bg-black">
+    <div className="relative h-full w-full bg-black mt-">
       <video
         src="/gold-star.mp4"
         className="absolute z-0 w-3/4 max-w-[750px]"
@@ -78,14 +78,11 @@ const Hero = () => {
             <video
               key={i}
               ref={addToRefs}
-              className="hidden-video absolute h-32 w-56 rounded-lg object-cover"
+              className="absolute h-32 w-56 rounded-lg object-cover"
               autoPlay
               loop
               muted
-              onLoadedData={e => {
-                e.target.classList.remove("hidden-video")
-                console.log(`Video ${i + 1} loaded`)
-              }}
+              onLoadedData={() => console.log(`Video ${i + 1} loaded`)}
               onError={e => console.error(`Error loading video ${i + 1}`, e)}
               style={{ zIndex: 10 - Math.floor(i / 2) }} // Adjust zIndex so older videos are on top
             >
@@ -94,7 +91,7 @@ const Hero = () => {
           )
         )}
       </div>
-      <div className="pt-120 relative z-20 px-4 sm:px-6 sm:pt-72 lg:px-8 lg:pt-24">
+      <div className="sm:pt-72 relative z-20 px-4 pt-120 sm:px-6 lg:px-8 lg:pt-24">
         <h1 className="pt-6 text-center sm:pt-32 md:pt-48 lg:pt-36 xl:pt-60 2xl:pt-72">
           <span className="lg:text-12xl bg-gradient-to-br from-purple-700 to-red-700 bg-clip-text pb-2 text-5xl font-black text-transparent sm:pb-4 sm:text-8xl md:text-8xl xl:text-8xl 2xl:text-9xl">
             Light. Speed.
