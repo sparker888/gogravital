@@ -8,7 +8,7 @@ export default function Contentsites() {
   const { contentImage } = useStaticQuery(
     graphql`
       query {
-        contentImage: file(relativePath: { eq: "patreon-blog-top.jpg" }) {
+        contentImage: file(relativePath: { eq: "new-content.png" }) {
           childImageSharp {
             gatsbyImageData(
               quality: 50
@@ -54,11 +54,11 @@ export default function Contentsites() {
         aria-labelledby="contact-heading"
       >
         <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
-          {/* Science Museum of Minnesota */}
-          <li key="Science Museum of Minnesota">
+          {/* Wheel Rail Seminars */}
+          <li key="Wheel Rail Seminars">
             <div className="rounded-br-2x l group grid grid-cols-1 gap-y-4 space-y-4 rounded-bl-2xl bg-slate-500 p-4 transition-colors duration-500 hover:bg-slate-400 md:px-8">
               <a
-                href="https://new.smm.org/"
+                href="https://wheel-rail-seminars.com/"
                 className="font-serif text-xl font-bold text-slate-200 transition-colors duration-200 group-hover:text-slate-800"
                 rel="noreferrer"
                 target="_blank"
@@ -72,12 +72,12 @@ export default function Contentsites() {
                     height={510}
                     src={"../images/science-museum-bottom.jpg"}
                     formats={["auto", "webp", "avif"]}
-                    alt="Science Museum of Minnesota"
+                    alt="Wheel Rail Seminars"
                   />
                 </div>
 
                 <div className="flex justify-center pt-6">
-                  <div>"Science Museum of Minnesota"</div>
+                  <div>"Wheel Rail Seminars"</div>
                   <LinkIcon className="ml-2 h-6 w-6 transition-colors group-hover:animate-pulse group-hover:text-purple-500" />
                 </div>
               </a>
@@ -113,10 +113,10 @@ export default function Contentsites() {
             </div>
           </li>
           {/* Cloudflare Developer Docs */}
-          <li key="Cloudflare Developer Docs">
-            <div className="rounded-br-2x l group grid grid-cols-1 gap-y-4 space-y-4 rounded-bl-2xl bg-slate-500 p-4 transition-colors duration-500 hover:bg-slate-400 md:px-8">
+          <li key="Preston Studios">
+            <div className="group grid grid-cols-1 gap-y-4 space-y-4 rounded-bl-2xl rounded-br-2xl bg-slate-500 p-4 transition-colors duration-500 hover:bg-slate-400 md:px-8">
               <a
-                href="https://developers.cloudflare.com/"
+                href="https://prestonstudios.com/"
                 className="font-serif text-xl font-bold text-slate-200 transition-colors duration-200 group-hover:text-slate-800"
                 rel="noreferrer"
                 target="_blank"
@@ -128,14 +128,14 @@ export default function Contentsites() {
                     layout="constrained"
                     width={405}
                     height={510}
-                    src={"../images/cloudflare-bottom.jpg"}
+                    src="../images/preston-studios-bottom.jpg"
                     formats={["auto", "webp", "avif"]}
-                    alt="https://developers.cloudflare.com/"
+                    alt="Preston Studios"
                   />
                 </div>
 
                 <div className="flex justify-center pt-6">
-                  <div>"Cloudflare Developer Docs"</div>
+                  <div>Preston Studios</div>
                   <LinkIcon className="ml-2 h-6 w-6 transition-colors group-hover:animate-pulse group-hover:text-purple-500" />
                 </div>
               </a>

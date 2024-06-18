@@ -8,7 +8,7 @@ export default function Ecommsites() {
   const { ecommImage } = useStaticQuery(
     graphql`
       query {
-        ecommImage: file(relativePath: { eq: "uag-top.jpg" }) {
+        ecommImage: file(relativePath: { eq: "wri-chicago-header.jpg" }) {
           childImageSharp {
             gatsbyImageData(
               quality: 50
@@ -27,41 +27,49 @@ export default function Ecommsites() {
 
   return (
     <div
-      className="max-w-xl container mx-auto my-24 rounded-3xl bg-slate-900"
+      className="max-w-7xl container mx-auto my-24 rounded-3xl bg-slate-900"
       id="showcase"
     >
-      <div className="max-w-md sm:max-w-3xl lg:max-w-7xl mx-auto px-4 pt-6 text-center sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 pt-6 text-center sm:px-6 lg:px-8">
         <div>
           <h2 className="my-6 bg-gradient-to-br from-purple-500 to-red-500 bg-clip-text font-logo font-bold uppercase tracking-wider text-transparent">
             JamStack Showcase
           </h2>
-          <p className="lg:text6xl mt-2 font-serif text-4xl font-bold tracking-tight text-slate-50 sm:text-5xl">
-            Ecommerce Platforms
+          <p className="mt-2 font-serif text-4xl font-bold tracking-tight text-slate-50 sm:text-5xl lg:text-6xl">
+            Event Sales Platforms
           </p>
-          <p className="max-w-prose mx-auto mt-5 px-20 font-body text-xl text-slate-50 sm:px-40 md:px-60">
-            Speed is essential on Ecommerce sites. Studies have consistently
-            shown that fast page speed will result in a better conversion rate.
-            47% expect the page to load in 2 seconds or less.
+          <p className="mx-auto mt-5 px-20 pb-4 font-body text-xl text-slate-50 sm:px-40 md:px-60">
+            I specialize in producing technical conference event sites. Read my{" "}
+            <a
+              href="https://gravital-wri-case-study.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="font-logo text-xl text-amber-600 underline"
+            >
+              WRI 2024 Website Redesign Case Study
+            </a>{" "}
+            of how a new Jamstack website helped increase conference attendance
+            32%!
           </p>
         </div>
         <div className="mt-12 -mb-10 sm:-mb-24 lg:-mb-12">
           <GatsbyImage
             image={pluginImage}
             className="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
-            alt="UAB by https://www.vincit.com/"
+            alt="WRI Chicago Header"
           />
         </div>
       </div>
       <section
-        className="max-w-7xl relative z-10 mx-auto -mt-8 px-4 pb-8 sm:-mt-12 sm:px-6 lg:-mt-16 lg:px-8"
+        className="relative z-10 mx-auto -mt-8 px-4 pb-8 sm:-mt-12 sm:px-6 lg:-mt-16 lg:px-8"
         aria-labelledby="contact-heading"
       >
         <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
-          {/* Preston Studios */}
-          <li key="Preston Studios">
-            <div className="rounded-br-2x l group grid grid-cols-1 gap-y-4 space-y-4 rounded-bl-2xl bg-slate-500 p-4 transition-colors duration-500 hover:bg-slate-400 md:px-8">
+          {/* Rail Transit Seminar */}
+          <li key="Rail Transit Seminar">
+            <div className="group grid grid-cols-1 gap-y-4 space-y-4 rounded-bl-2xl rounded-br-2xl bg-slate-500 p-4 transition-colors duration-500 hover:bg-slate-400 md:px-8">
               <a
-                href="https://prestonstudios.com/"
+                href="https://wri.wheel-rail-seminars.com/rail-transit-seminar#icons"
                 className="font-serif text-xl font-bold text-slate-200 transition-colors duration-200 group-hover:text-slate-800"
                 rel="noreferrer"
                 target="_blank"
@@ -73,24 +81,24 @@ export default function Ecommsites() {
                     layout="constrained"
                     width={405}
                     height={510}
-                    src={"../images/preston-studios-bottom.jpg"}
+                    src="../images/wri-rt.jpeg"
                     formats={["auto", "webp", "avif"]}
-                    alt="PrestonStudios.com"
+                    alt="Rail Transit Seminar"
                   />
                 </div>
 
                 <div className="flex justify-center pt-6">
-                  <div>"Preston Studios"</div>
+                  <div>Rail Transit Seminar</div>
                   <LinkIcon className="ml-2 h-6 w-6 transition-colors group-hover:animate-pulse group-hover:text-purple-500" />
                 </div>
               </a>
             </div>
           </li>
-          {/* Little Caesars */}
-          <li key="Little Caesars">
-            <div className="rounded-br-2x l group grid grid-cols-1 gap-y-4 space-y-4 rounded-bl-2xl bg-slate-500 p-4 transition-colors duration-500 hover:bg-slate-400 md:px-8">
+          {/* WRI2024 home page */}
+          <li key="WRI2024 home page">
+            <div className="group grid grid-cols-1 gap-y-4 space-y-4 rounded-bl-2xl rounded-br-2xl bg-slate-500 p-4 transition-colors duration-500 hover:bg-slate-400 md:px-8">
               <a
-                href="https://littlecaesars.com/en-us/"
+                href="https://wri.wheel-rail-seminars.com/"
                 className="font-serif text-xl font-bold text-slate-200 transition-colors duration-200 group-hover:text-slate-800"
                 rel="noreferrer"
                 target="_blank"
@@ -102,24 +110,24 @@ export default function Ecommsites() {
                     layout="constrained"
                     width={405}
                     height={510}
-                    src={"../images/little-caesars-bottom.jpg"}
+                    src="../images/little-caesars-bottom.jpg"
                     formats={["auto", "webp", "avif"]}
-                    alt="https://littlecaesars.com/"
+                    alt="WRI2024 home page"
                   />
                 </div>
 
                 <div className="flex justify-center pt-6">
-                  <div>"Little Caesars"</div>
+                  <div>WRI2024 home page</div>
                   <LinkIcon className="ml-2 h-6 w-6 transition-colors group-hover:animate-pulse group-hover:text-purple-500" />
                 </div>
               </a>
             </div>
           </li>
-          {/* Bear Archery */}
-          <li key="Bear Archery">
-            <div className="rounded-br-2x l group grid grid-cols-1 gap-y-4 space-y-4 rounded-bl-2xl bg-slate-500 p-4 transition-colors duration-500 hover:bg-slate-400 md:px-8">
+          {/* The Magic of Integrations */}
+          <li key="The Magic of Integrations">
+            <div className="group grid grid-cols-1 gap-y-4 space-y-4 rounded-bl-2xl rounded-br-2xl bg-slate-500 p-4 transition-colors duration-500 hover:bg-slate-400 md:px-8">
               <a
-                href="https://www.beararchery.com/"
+                href="https://gravital-wri-case-study.netlify.app/"
                 className="font-serif text-xl font-bold text-slate-200 transition-colors duration-200 group-hover:text-slate-800"
                 rel="noreferrer"
                 target="_blank"
@@ -131,14 +139,14 @@ export default function Ecommsites() {
                     layout="constrained"
                     width={405}
                     height={510}
-                    src={"../images/bear-archery-bottom.jpg"}
+                    src="../images/bear-archery-bottom.jpg"
                     formats={["auto", "webp", "avif"]}
-                    alt="https://www.beararchery.com/"
+                    alt="The Magic of Integrations"
                   />
                 </div>
 
                 <div className="flex justify-center pt-6">
-                  <div>"Bear Archery"</div>
+                  <div>The Magic of Integrations</div>
                   <LinkIcon className="ml-2 h-6 w-6 transition-colors group-hover:animate-pulse group-hover:text-purple-500" />
                 </div>
               </a>

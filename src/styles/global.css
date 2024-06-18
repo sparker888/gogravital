@@ -3,3 +3,21 @@
 @tailwind utilities;
 
 @import url("https://use.typekit.net/zxh8jgs.css");
+
+.video-container {
+    position: relative;
+    top: -50px;
+    /* Adjust this value as needed */
+}
+.custom-max-w {
+    max-width: 72rem;
+    /* This is the value of max-w-xl in Tailwind */
+}
+
+body {
+    background: black;
+}
+
+.hidden-video {
+    visibility: hidden;
+}

@@ -13,7 +13,7 @@ module.exports = {
     description: `Blazing fast websites powered by Jamstack.`,
     siteUrl: `https://www.gravitaldigital.com`, // No trailing slash allowed!
     twitterUsername: `@gogravital`,
-    publicURL: `/gogravital-social-card.jpg`, // This will be the default 'social' image for social media shares (in the static folder)
+    publicURL: `/social-card-2024.png`, // Ensure this image is in the static folder
     organization: `Gravital Digital`,
     author: `@gogravital`,
   },
@@ -23,15 +23,12 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`, // See https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/
+      resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Gravital Digital Website Developers`,
         short_name: `Gravital`,
         start_url: `/`,
         background_color: `#CA8A04`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#CA8A04` which is amber-600 from Gravital Branding.
         display: `minimal-ui`,
         icon: `src/images/gravital.png`, // This path is relative to the root of the site.
         theme_color_in_head: false, // This will avoid adding theme-color meta tag.
@@ -80,7 +77,6 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        // Find the Google Tag Manager ID on
         id: "GTM-TCK3QP",
         includeInDevelopment: false,
         defaultDataLayer: { platform: `gatsby` },
