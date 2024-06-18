@@ -44,7 +44,7 @@ export default function Ecommsites() {
               href="https://gravital-wri-case-study.netlify.app/"
               target="_blank"
               rel="noreferrer"
-              className="font-logo text-xl text-orange-600 underline"
+              className="font-logo text-xl text-amber-600 underline"
             >
               WRI 2024 Website Redesign Case Study
             </a>{" "}
