@@ -72,7 +72,7 @@ export default function Footer() {
             <p>
               <a
                 className="group text-amber-500 hover:text-sky-500"
-                href="https://www.sparker888.com"
+                href="https://sparker888.com"
               >
                 <span className="text-sky-500 group-hover:text-amber-500">
                   Produced by
