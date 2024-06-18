@@ -28,7 +28,7 @@ export default function Banner() {
         />
       </div>
       <div className="flex w-full flex-wrap items-center justify-center gap-x-4 gap-y-2">
-        <p className="text-center text-sm leading-6 text-gray-900">
+        <p className="text-center leading-6 text-black">
           <strong className="font-semibold">WRI 2024 Scores Big!</strong>
           <svg
             viewBox="0 0 2 2"
@@ -38,7 +38,7 @@ export default function Banner() {
             <circle cx={1} cy={1} r={1} />
           </svg>
           Read how their new Jamstack event website helped to increase
-          attendance 32%!
+          attendance 30%!
         </p>
         <a
           href="https://gravital-wri-case-study.netlify.app/"
