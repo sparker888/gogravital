@@ -46,7 +46,7 @@ export default function Zerocosts() {
                   CDN host / mo.
                 </h2>
                 <h1 className="lg:mt-15 mt-3 font-sans text-3xl font-bold text-amber-700 sm:mt-7 sm:text-4xl lg:text-5xl">
-                  $19
+                  $19+
                 </h1>
                 <h2 className="mt-2 font-sans text-2xl text-slate-50 sm:text-3xl lg:text-4xl">
                   CDN at scale / mo.
@@ -55,7 +55,7 @@ export default function Zerocosts() {
                   ~40%
                 </h1>
                 <h2 className="font-regular mt-2 font-sans text-2xl text-slate-50 sm:text-3xl lg:text-4xl">
-                  IT budget just for upgrades
+                  of IT budgets just for legacy maintenance for comparison
                 </h2>
               </div>
             </div>
