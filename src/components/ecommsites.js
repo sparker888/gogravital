@@ -65,11 +65,11 @@ export default function Ecommsites() {
         aria-labelledby="contact-heading"
       >
         <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
-          {/* Preston Studios */}
-          <li key="Preston Studios">
+          {/* Rail Transit Seminar */}
+          <li key="Rail Transit Seminar">
             <div className="group grid grid-cols-1 gap-y-4 space-y-4 rounded-bl-2xl rounded-br-2xl bg-slate-500 p-4 transition-colors duration-500 hover:bg-slate-400 md:px-8">
               <a
-                href="https://prestonstudios.com/"
+                href="https://wri.wheel-rail-seminars.com/rail-transit-seminar#icons"
                 className="font-serif text-xl font-bold text-slate-200 transition-colors duration-200 group-hover:text-slate-800"
                 rel="noreferrer"
                 target="_blank"
@@ -81,24 +81,24 @@ export default function Ecommsites() {
                     layout="constrained"
                     width={405}
                     height={510}
-                    src="../images/preston-studios-bottom.jpg"
+                    src="../images/wri-rt.jpeg"
                     formats={["auto", "webp", "avif"]}
-                    alt="Preston Studios"
+                    alt="Rail Transit Seminar"
                   />
                 </div>
 
                 <div className="flex justify-center pt-6">
-                  <div>Preston Studios</div>
+                  <div>Rail Transit Seminar</div>
                   <LinkIcon className="ml-2 h-6 w-6 transition-colors group-hover:animate-pulse group-hover:text-purple-500" />
                 </div>
               </a>
             </div>
           </li>
-          {/* Little Caesars */}
-          <li key="Little Caesars">
+          {/* WRI2024 home page */}
+          <li key="WRI2024 home page">
             <div className="group grid grid-cols-1 gap-y-4 space-y-4 rounded-bl-2xl rounded-br-2xl bg-slate-500 p-4 transition-colors duration-500 hover:bg-slate-400 md:px-8">
               <a
-                href="https://littlecaesars.com/en-us/"
+                href="https://wri.wheel-rail-seminars.com/"
                 className="font-serif text-xl font-bold text-slate-200 transition-colors duration-200 group-hover:text-slate-800"
                 rel="noreferrer"
                 target="_blank"
@@ -112,22 +112,22 @@ export default function Ecommsites() {
                     height={510}
                     src="../images/little-caesars-bottom.jpg"
                     formats={["auto", "webp", "avif"]}
-                    alt="Little Caesars"
+                    alt="WRI2024 home page"
                   />
                 </div>
 
                 <div className="flex justify-center pt-6">
-                  <div>Little Caesars</div>
+                  <div>WRI2024 home page</div>
                   <LinkIcon className="ml-2 h-6 w-6 transition-colors group-hover:animate-pulse group-hover:text-purple-500" />
                 </div>
               </a>
             </div>
           </li>
-          {/* Bear Archery */}
-          <li key="Bear Archery">
+          {/* The Magic of Integrations */}
+          <li key="The Magic of Integrations">
             <div className="group grid grid-cols-1 gap-y-4 space-y-4 rounded-bl-2xl rounded-br-2xl bg-slate-500 p-4 transition-colors duration-500 hover:bg-slate-400 md:px-8">
               <a
-                href="https://www.beararchery.com/"
+                href="https://gravital-wri-case-study.netlify.app/"
                 className="font-serif text-xl font-bold text-slate-200 transition-colors duration-200 group-hover:text-slate-800"
                 rel="noreferrer"
                 target="_blank"
@@ -141,12 +141,12 @@ export default function Ecommsites() {
                     height={510}
                     src="../images/bear-archery-bottom.jpg"
                     formats={["auto", "webp", "avif"]}
-                    alt="Bear Archery"
+                    alt="The Magic of Integrations"
                   />
                 </div>
 
                 <div className="flex justify-center pt-6">
-                  <div>Bear Archery</div>
+                  <div>The Magic of Integrations</div>
                   <LinkIcon className="ml-2 h-6 w-6 transition-colors group-hover:animate-pulse group-hover:text-purple-500" />
                 </div>
               </a>

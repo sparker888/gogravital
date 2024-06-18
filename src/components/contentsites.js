@@ -77,7 +77,7 @@ export default function Contentsites() {
                 </div>
 
                 <div className="flex justify-center pt-6">
-                  <div>"Science Museum of Minnesota"</div>
+                  <div>"Wheel Rail Seminars"</div>
                   <LinkIcon className="ml-2 h-6 w-6 transition-colors group-hover:animate-pulse group-hover:text-purple-500" />
                 </div>
               </a>

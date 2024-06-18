@@ -16,21 +16,21 @@ import {
 
 const supportLinks = [
   {
-    name: "Website Design & Build",
+    name: "Website Design, Build & Management",
     href: "/#contact",
     description:
       "Upgrade your old website from slow, outdated, and sometimes insecure legacy platforms like WordPress to light and fast Jamstack architecture for improved UX, security and higher conversions.",
     icon: LightBulbIcon,
   },
   {
-    name: "EVENT, CMS & Email Setup",
+    name: "Event Software, CMS, ESP Integration",
     href: "/#contact",
     description:
       "Ingegrations are the magic that make websites truly powerful. I speialize in integrating event software, Content Management Systems (CMS) and Email Service Providers.",
     icon: CursorClickIcon,
   },
   {
-    name: "Analytics & Reports Setup",
+    name: "Analytics Setup & Report Review",
     href: "/#contact",
     description:
       "Collecting and analyzing website and app data is critically important to making informed digital marketing decisions. I have some great solutions for this and privacy.",
@@ -134,7 +134,7 @@ export default function Services() {
                   to={link.href}
                   className="text-bold font-bold text-sky-900 group-hover:text-amber-900"
                 >
-                  Contact Us for Details<span aria-hidden="true"> &rarr;</span>
+                  Get in Touch for Details<span aria-hidden="true"> &rarr;</span>
                 </AnchorLink>
               </div>
             </div>
