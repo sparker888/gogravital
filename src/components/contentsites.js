@@ -8,7 +8,7 @@ export default function Contentsites() {
   const { contentImage } = useStaticQuery(
     graphql`
       query {
-        contentImage: file(relativePath: { eq: "patreon-blog-top.jpg" }) {
+        contentImage: file(relativePath: { eq: "new-content.png" }) {
           childImageSharp {
             gatsbyImageData(
               quality: 50

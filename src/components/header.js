@@ -12,7 +12,7 @@ const navigation = [
 
 export default function Header() {
   return (
-    <header className="relative top-0 bg-slate-900">
+    <header className="sticky top-0 z-50 bg-slate-900 shadow">
       <nav
         className="max-w-7xl container mx-auto px-4 sm:px-6 lg:px-8"
         aria-label="Top"
@@ -54,14 +54,14 @@ export default function Header() {
             <AnchorLink
               to="#showcase"
               title="Showcase"
-              className="sm:content hidden rounded-full border border-transparent bg-sky-600 py-2 px-4 font-sans text-base font-normal text-slate-50 transition duration-500 hover:bg-sky-900 hover:text-amber-200 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 sm:inline-block sm:w-auto"
+              className="hidden rounded-full border border-transparent bg-sky-600 py-2 px-4 font-sans text-base font-normal text-slate-50 transition duration-500 hover:bg-sky-900 hover:text-amber-200 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 sm:inline-block"
             >
               Showcase
             </AnchorLink>
             <AnchorLink
               to="#contact"
               title="Contact"
-              className="inline-block rounded-full border border-transparent bg-amber-600 py-2 px-4 font-sans text-base font-normal text-sky-50 transition duration-500 hover:bg-amber-900 hover:text-sky-200 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 sm:w-auto"
+              className="inline-block rounded-full border border-transparent bg-amber-600 py-2 px-4 font-sans text-base font-normal text-sky-50 transition duration-500 hover:bg-amber-900 hover:text-sky-200 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2"
             >
               Contact
             </AnchorLink>

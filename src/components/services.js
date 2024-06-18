@@ -19,21 +19,21 @@ const supportLinks = [
     name: "Website Design & Build",
     href: "/#contact",
     description:
-      "Upgrade your old website from slow, outdated platforms like WordPress to light and fast Jamstack architecture for improved UX and higher conversions.",
+      "Upgrade your old website from slow, outdated, and sometimes insecure legacy platforms like WordPress to light and fast Jamstack architecture for improved UX, security and higher conversions.",
     icon: LightBulbIcon,
   },
   {
-    name: "CMS, CRM & Email Setup",
+    name: "EVENT, CMS & Email Setup",
     href: "/#contact",
     description:
-      "For the full content-driven SEO sales program, we can set up your preferred CMS, CRM and Email platforms. We are Contentful, HubSpot and Mailchimp experts.",
+      "Ingegrations are the magic that make websites truly powerful. I speialize in integrating event software, Content Management Systems (CMS) and Email Service Providers.",
     icon: CursorClickIcon,
   },
   {
     name: "Analytics & Reports Setup",
     href: "/#contact",
     description:
-      "Collecting and analyzing website and app data is critically important to making informed digital marketing decisions. We’re data experts.",
+      "Collecting and analyzing website and app data is critically important to making informed digital marketing decisions. I have some great solutions for this and privacy.",
     icon: DocumentSearchIcon,
   },
 ]
@@ -80,7 +80,7 @@ export default function Services() {
         </div>
         <div className="max-w-7xl relative mx-auto py-16 px-6 sm:py-12 sm:px-6 lg:px-8 lg:py-8">
           <h1 className="mb-5 justify-self-end font-sans text-5xl font-black text-white sm:text-5xl md:justify-self-end md:text-6xl lg:text-8xl">
-            Our Services
+            Popular Services
           </h1>
           <h1 className="mt-4 bg-gradient-to-br from-white to-yellow-500 bg-clip-text font-sans text-4xl font-bold tracking-tight text-transparent sm:mt-5 sm:text-6xl lg:mt-6 xl:text-7xl">
             <span className="block leading-tight">
@@ -96,8 +96,7 @@ export default function Services() {
           <p className="max-w-xl mt-6 font-body text-xl leading-10 text-gray-300 lg:max-w-[50%] lg:text-2xl">
             Realize the potential of your website to deliver fast load times,
             higher Google rankings, better user experiences, and higher
-            conversion rates. We have the full range of services to support
-            content marketing and eCommerce driven sites.
+            conversion rates that will improve your KPIs.
           </p>
         </div>
       </div>

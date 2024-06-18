@@ -62,7 +62,7 @@ export default function Contact() {
               </h2>
               <p className="max-w-3xl mt-6 font-body text-base leading-loose text-sky-200">
                 For the quickest response, please use this contact form. If
-                calling, please leave a message and we'll get back to you ASAP.
+                calling, please leave a message and I'll get back to you ASAP.
                 Thank you!
               </p>
               <dl className="mt-8 space-y-6">
