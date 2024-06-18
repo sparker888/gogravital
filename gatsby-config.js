@@ -13,7 +13,7 @@ module.exports = {
     description: `Blazing fast websites powered by Jamstack.`,
     siteUrl: `https://www.gravitaldigital.com`, // No trailing slash allowed!
     twitterUsername: `@gogravital`,
-    publicURL: `/social-card-2024.png`, // Ensure this image is in the static folder
+    publicURL: `/gogravital-social-card.png`,
     organization: `Gravital Digital`,
     author: `@gogravital`,
   },
