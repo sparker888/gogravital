@@ -93,7 +93,7 @@ const Hero = () => {
           )
         )}
       </div>
-      <div className="pt-120 relative z-20 px-4 sm:px-6 sm:pt-72 lg:px-8 lg:pt-48">
+      <div className="pt-120 relative z-20 px-4 sm:px-6 sm:pt-72 lg:px-8 lg:pt-36">
         <h1 className="pt-72 text-center sm:pt-32 md:pt-48 lg:pt-36 xl:pt-60 2xl:pt-72">
           <span className="lg:text-12xl bg-gradient-to-br from-purple-700 to-red-700 bg-clip-text pb-2 text-5xl font-black text-transparent sm:pb-4 sm:text-8xl md:text-8xl xl:text-8xl 2xl:text-9xl">
             Light. Speed.
