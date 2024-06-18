@@ -1,8 +1,6 @@
 import * as React from "react"
-
 import { useStaticQuery, graphql } from "gatsby"
 import { getImage, StaticImage } from "gatsby-plugin-image"
-
 import { BgImage } from "gbimage-bridge" // BgImage is a wrapper for gbimage-bridge
 
 /* This bridge is fix until Gatsby gets BgImage working directly with gatsby-plugin-image again */
@@ -85,10 +83,8 @@ export default function Zerocosts() {
                   className="h-972 inline h-max"
                   placeholder="blurred"
                   layout="fullWidth"
-                  width={946}
-                  height={472}
-                  src={"../images/stack-946x472.png"}
                   formats={["auto", "webp", "avif"]}
+                  src={"../images/stack-946x472.png"}
                   alt="Legacy Stack v. JamStack"
                 />
                 <p className="sm:text-regular mx-auto mt-2 mb-5 font-body text-sm text-slate-50">

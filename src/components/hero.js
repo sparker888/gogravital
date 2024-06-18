@@ -15,7 +15,6 @@ const Hero = () => {
       const isLeft = index % 2 === 0
       const direction = isLeft ? "-" : ""
       const startPos = isLeft ? "-150px" : "150px"
-      const endPos = isLeft ? "-500%" : "500%" // Ensure videos go completely off the edge
 
       gsap
         .timeline({ repeat: -1, repeatDelay: 0, delay })
@@ -84,9 +83,11 @@ const Hero = () => {
               autoPlay
               loop
               muted
-              onLoadedData={() => console.log(`Video ${i + 1} loaded`)}
+              preload="metadata"
+              loading="lazy"
+              onCanPlayThrough={e => e.target.classList.add("video-loaded")}
               onError={e => console.error(`Error loading video ${i + 1}`, e)}
-              style={{ zIndex: 10 - Math.floor(i / 2) }} // Adjust zIndex so older videos are on top
+              style={{ zIndex: 10 - Math.floor(i / 2), visibility: "hidden" }} // Adjust zIndex so older videos are on top
             >
               <source src={`/videos/clip-${i + 1}.mp4`} type="video/mp4" />
             </video>

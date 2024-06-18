@@ -4,8 +4,6 @@ import ScrollButton from "../components/scrollup"
 import Footer2 from "../components/footer2"
 import MyButton from "../components/test"
 
-const hi = "Hello"
-
 const StyleGuide = () => {
   return (
     <div className="bg-slate-600">

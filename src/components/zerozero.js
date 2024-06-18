@@ -11,7 +11,7 @@ export default function Benefits() {
           <div className="sm:flex-shrink">
             <div className="block rounded-2xl rounded-tl-none border border-slate-400 bg-gradient-to-r from-sky-600 to-purple-600 text-center">
               <div className="flow-root">
-                <div class="rounded-xl-embed my-3 rounded-t-none py-8 px-6 md:shadow-red-500">
+                <div className="rounded-xl-embed my-3 rounded-t-none py-8 px-6 md:shadow-red-500">
                   <h2 className="mt-2 mb-6 font-sans text-4xl font-bold text-slate-50 lg:text-5xl xl:text-6xl">
                     Zero Hacks
                   </h2>
@@ -31,7 +31,7 @@ export default function Benefits() {
           <div className="sm:flex-shrink">
             <div className="flow-root">
               <div className="block rounded-2xl rounded-tl-none border border-gray-400 bg-gradient-to-r from-purple-600 to-purple-900 text-center">
-                <div class="rounded-xl-embed my-3 rounded-t-none py-8 px-6">
+                <div className="rounded-xl-embed my-3 rounded-t-none py-8 px-6">
                   <h2 className="mt-2 mb-6 font-sans text-4xl font-bold text-slate-50 lg:text-5xl xl:text-6xl">
                     Zero Downtime
                   </h2>

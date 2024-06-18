@@ -2,7 +2,6 @@ import * as React from "react"
 import { MailIcon, PhoneIcon, CalendarIcon } from "@heroicons/react/outline"
 import { useStaticQuery, graphql } from "gatsby"
 import { getImage, StaticImage } from "gatsby-plugin-image"
-
 import { BgImage } from "gbimage-bridge" // BgImage is a wrapper for gbimage-bridge
 
 /* This bridge is fix until Gatsby gets BgImage working directly with gatsby-plugin-image again */
@@ -113,7 +112,6 @@ export default function Contact() {
             >
               <form
                 name="contact"
-                form
                 id="gravital-netlify-form"
                 method="POST"
                 data-netlify="true"
