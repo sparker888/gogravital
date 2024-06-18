@@ -8,9 +8,9 @@ module.exports = {
       twitter: `https://twitter.com/gogravital/`,
     },
     locale: `en`,
-    title: `Gravital Digital | Website Developers`,
-    titleTemplate: `Gravital Digital | Website Developers`,
-    description: `Blazing fast websites powered by Jamstack.`,
+    title: `Gravital Digital | Website Producer Stephen Parker`,
+    titleTemplate: `Gravital Digital | Website Producer Stephen Parker`,
+    description: `Light. Speed. websites powered by Jamstack for high performance.`,
     siteUrl: `https://www.gravitaldigital.com`, // No trailing slash allowed!
     twitterUsername: `@gogravital`,
     publicURL: `/gogravital-social-card.png`,
@@ -25,7 +25,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gravital Digital Website Developers`,
+        name: `Gravital Digital | Website Producer Stephen Parker`,
         short_name: `Gravital`,
         start_url: `/`,
         background_color: `#CA8A04`,
