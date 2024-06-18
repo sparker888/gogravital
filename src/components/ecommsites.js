@@ -49,7 +49,7 @@ export default function Ecommsites() {
               WRI 2024 Website Redesign Case Study
             </a>{" "}
             of how a new Jamstack website helped increase conference attendance
-            32%!
+            over 30%!
           </p>
         </div>
         <div className="mt-12 -mb-10 sm:-mb-24 lg:-mb-12">
