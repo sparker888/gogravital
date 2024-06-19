@@ -56,11 +56,9 @@ const Hero = () => {
 
   return (
     <div className="relative h-full w-full bg-black md:mt-[120px] lg:mt-[96px] xl:mt-[48px]">
-      {" "}
-      {/* Adjust top margin here */}
       <video
         src="/gold-star.mp4"
-        className="untappable absolute z-0 w-3/4 max-w-[750px]"
+        className="untappable absolute z-0 hidden w-3/4 max-w-[750px] md:block"
         autoPlay
         loop
         muted
@@ -70,34 +68,44 @@ const Hero = () => {
           transform: "translate(-50%, -50%)",
         }}
       />
-      <div className="absolute inset-0 z-10 mt-[-75px] flex h-2/3 items-center justify-center overflow-hidden">
+      <div className="absolute inset-0 z-10 mt-[-75px] flex hidden h-2/3 items-center justify-center overflow-hidden md:flex">
         {[...Array(16)].map(
           (
             _,
             i // Increased number of videos
           ) => (
-            <div key={i} className="relative">
-              <video
-                ref={addToRefs}
-                className="hidden-video untappable absolute h-32 w-56 rounded-lg object-cover"
-                autoPlay
-                loop
-                muted
-                preload="metadata"
-                loading="lazy"
-                onCanPlayThrough={e => e.target.classList.add("video-loaded")}
-                onError={e => console.error(`Error loading video ${i + 1}`, e)}
-                style={{
-                  zIndex: 10 - Math.floor(i / 2),
-                  visibility: "hidden",
-                }}
-              >
-                <source src={`/videos/clip-${i + 1}.mp4`} type="video/mp4" />
-              </video>
-              <div className="overlay"></div>
-            </div>
+            <video
+              key={i}
+              ref={addToRefs}
+              className="hidden-video untappable absolute h-32 w-56 rounded-lg object-cover"
+              autoPlay
+              loop
+              muted
+              preload="metadata"
+              loading="lazy"
+              onCanPlayThrough={e => e.target.classList.add("video-loaded")}
+              onError={e => console.error(`Error loading video ${i + 1}`, e)}
+              style={{
+                zIndex: 10 - Math.floor(i / 2),
+                visibility: "hidden",
+              }}
+            >
+              <source src={`/videos/clip-${i + 1}.mp4`} type="video/mp4" />
+            </video>
           )
         )}
+      </div>
+      <div className="absolute inset-0 z-10 flex h-2/3 items-center justify-center md:hidden">
+        <video
+          src="/videos/clip-1.mp4"
+          className="untappable h-32 w-56 rounded-lg object-cover"
+          autoPlay
+          loop
+          muted
+          preload="metadata"
+        >
+          <source src="/videos/clip-1.mp4" type="video/mp4" />
+        </video>
       </div>
       <div className="pt-120 relative z-20 px-4 sm:px-6 sm:pt-72 lg:px-8 lg:pt-36">
         <h1 className="pt-72 text-center sm:pt-32 md:pt-48 lg:pt-36 xl:pt-60 2xl:pt-72">
