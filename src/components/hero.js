@@ -58,7 +58,7 @@ const Hero = () => {
     <div className="relative h-full w-full bg-black md:mt-[120px] lg:mt-[96px] xl:mt-[48px]">
       <video
         src="/gold-star.mp4"
-        className="untappable absolute z-0 hidden w-3/4 max-w-[750px] md:block"
+        className="untappable absolute z-0 w-3/4 max-w-[750px] md:block"
         autoPlay
         loop
         muted
@@ -98,11 +98,16 @@ const Hero = () => {
       <div className="absolute inset-0 z-10 flex h-2/3 items-center justify-center md:hidden">
         <video
           src="/videos/clip-1.mp4"
-          className="untappable h-32 w-56 rounded-lg object-cover"
+          className="untappable h-auto w-full max-w-[750px] rounded-lg object-cover"
           autoPlay
           loop
           muted
           preload="metadata"
+          style={{
+            top: "0%", // Adjust this value to move the video up further
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+          }}
         >
           <source src="/videos/clip-1.mp4" type="video/mp4" />
         </video>
