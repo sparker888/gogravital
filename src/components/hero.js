@@ -18,26 +18,26 @@ const Hero = () => {
 
       gsap
         .timeline({ repeat: -1, repeatDelay: 0, delay })
-        .set(video, { x: startPos, zIndex, opacity: 1, visibility: "visible" }) // Make video visible
+        .set(video, { x: startPos, zIndex, opacity: 1, visibility: "visible" })
         .fromTo(
           video,
           { scale: 1, opacity: 1, x: startPos },
           {
             scale: 2.75,
             opacity: 1,
-            x: `${direction}500%`, // Continuous movement
-            duration: 6, // Faster duration for quicker flow
-            ease: "none", // Remove easing to keep a constant speed
+            x: `${direction}500%`,
+            duration: 6,
+            ease: "none",
           }
         )
         .to(
           video,
           {
             opacity: 0,
-            duration: 0.5, // Fast fade-out duration
+            duration: 0.5,
             ease: "none",
           },
-          "-=0.5" // Start fading 0.5 seconds before the end of the animation
+          "-=0.5"
         )
         .set(video, { x: startPos, scale: 1, opacity: 1 })
     })
@@ -50,7 +50,7 @@ const Hero = () => {
     }
 
     layers.forEach((layer, index) => {
-      createAnimation(layer, index * 2, 10 - index) // Set zIndex based on index (older videos have higher zIndex)
+      createAnimation(layer, index * 2, 10 - index)
     })
   }, [])
 
@@ -58,60 +58,66 @@ const Hero = () => {
     <div className="relative h-full w-full bg-black md:mt-[120px] lg:mt-[96px] xl:mt-[48px]">
       <video
         src="/gold-star.mp4"
-        className="untappable absolute z-0 w-3/4 max-w-[750px] md:block"
+        className="untappable absolute z-0 hidden w-3/4 max-w-[750px] md:block"
         autoPlay
         loop
         muted
         style={{
-          top: "calc(50% - 100px)", // Adjust this value to move the video up further
+          top: "calc(55% - 100px)", // Adjusted position for desktop
           left: "50%",
           transform: "translate(-50%, -50%)",
         }}
       />
       <div className="absolute inset-0 z-10 mt-[-75px] flex hidden h-2/3 items-center justify-center overflow-hidden md:flex">
-        {[...Array(16)].map(
-          (
-            _,
-            i // Increased number of videos
-          ) => (
-            <video
-              key={i}
-              ref={addToRefs}
-              className="hidden-video untappable absolute h-32 w-56 rounded-lg object-cover"
-              autoPlay
-              loop
-              muted
-              preload="metadata"
-              loading="lazy"
-              onCanPlayThrough={e => e.target.classList.add("video-loaded")}
-              onError={e => console.error(`Error loading video ${i + 1}`, e)}
-              style={{
-                zIndex: 10 - Math.floor(i / 2),
-                visibility: "hidden",
-              }}
-            >
-              <source src={`/videos/clip-${i + 1}.mp4`} type="video/mp4" />
-            </video>
-          )
-        )}
+        {[...Array(16)].map((_, i) => (
+          <video
+            key={i}
+            ref={addToRefs}
+            className="hidden-video untappable absolute h-32 w-56 rounded-lg object-cover"
+            autoPlay
+            loop
+            muted
+            preload="metadata"
+            loading="lazy"
+            onCanPlayThrough={e => e.target.classList.add("video-loaded")}
+            onError={e => console.error(`Error loading video ${i + 1}`, e)}
+            style={{
+              zIndex: 10 - Math.floor(i / 2),
+              visibility: "hidden",
+              top: "calc(50% - 50px)", // Adjusted position for desktop videos
+            }}
+          >
+            <source src={`/videos/clip-${i + 1}.mp4`} type="video/mp4" />
+          </video>
+        ))}
       </div>
-      <div className="absolute inset-0 z-10 flex h-2/3 items-center justify-center md:hidden">
-        <video
-          src="/videos/clip-1.mp4"
-          className="untappable h-auto w-full max-w-[750px] rounded-lg object-cover"
-          autoPlay
-          loop
-          muted
-          preload="metadata"
-          style={{
-            top: "0%", // Adjust this value to move the video up further
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
-        >
-          <source src="/videos/clip-1.mp4" type="video/mp4" />
-        </video>
+      <div className="absolute inset-0 z-10 mt-[-250px] flex h-full flex-col items-center justify-center md:hidden">
+        {" "}
+        {/* Adjust this margin */}
+        <div className="flex items-center justify-center">
+          <video
+            src="/videos/clip-1.mp4"
+            className="untappable mr-2 h-auto w-1/2 max-w-[375px] rounded-lg object-cover"
+            autoPlay
+            loop
+            muted
+            preload="metadata"
+          >
+            <source src="/videos/clip-1.mp4" type="video/mp4" />
+          </video>
+          <video
+            src="/videos/clip-2.mp4"
+            className="untappable h-auto w-1/2 max-w-[375px] rounded-lg object-cover"
+            autoPlay
+            loop
+            muted
+            preload="metadata"
+          >
+            <source src="/videos/clip-2.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
+
       <div className="pt-120 relative z-20 px-4 sm:px-6 sm:pt-72 lg:px-8 lg:pt-36">
         <h1 className="pt-72 text-center sm:pt-32 md:pt-48 lg:pt-36 xl:pt-60 2xl:pt-72">
           <span className="lg:text-12xl bg-gradient-to-br from-purple-700 to-red-700 bg-clip-text pb-2 text-5xl font-black text-transparent sm:pb-4 sm:text-8xl md:text-8xl xl:text-8xl 2xl:text-9xl">
