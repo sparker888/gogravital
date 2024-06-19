@@ -60,7 +60,7 @@ const Hero = () => {
       {/* Adjust top margin here */}
       <video
         src="/gold-star.mp4"
-        className="absolute z-0 w-3/4 max-w-[750px]"
+        className="untappable absolute z-0 w-3/4 max-w-[750px]"
         autoPlay
         loop
         muted
@@ -68,7 +68,6 @@ const Hero = () => {
           top: "calc(50% - 100px)", // Adjust this value to move the video up further
           left: "50%",
           transform: "translate(-50%, -50%)",
-          pointerEvents: "none", // Make video untappable
         }}
       />
       <div className="absolute inset-0 z-10 mt-[-75px] flex h-2/3 items-center justify-center overflow-hidden">
@@ -77,25 +76,26 @@ const Hero = () => {
             _,
             i // Increased number of videos
           ) => (
-            <video
-              key={i}
-              ref={addToRefs}
-              className="hidden-video absolute h-32 w-56 rounded-lg object-cover"
-              autoPlay
-              loop
-              muted
-              preload="metadata"
-              loading="lazy"
-              onCanPlayThrough={e => e.target.classList.add("video-loaded")}
-              onError={e => console.error(`Error loading video ${i + 1}`, e)}
-              style={{
-                zIndex: 10 - Math.floor(i / 2),
-                visibility: "hidden",
-                pointerEvents: "none", // Make video untappable
-              }}
-            >
-              <source src={`/videos/clip-${i + 1}.mp4`} type="video/mp4" />
-            </video>
+            <div key={i} className="relative">
+              <video
+                ref={addToRefs}
+                className="hidden-video untappable absolute h-32 w-56 rounded-lg object-cover"
+                autoPlay
+                loop
+                muted
+                preload="metadata"
+                loading="lazy"
+                onCanPlayThrough={e => e.target.classList.add("video-loaded")}
+                onError={e => console.error(`Error loading video ${i + 1}`, e)}
+                style={{
+                  zIndex: 10 - Math.floor(i / 2),
+                  visibility: "hidden",
+                }}
+              >
+                <source src={`/videos/clip-${i + 1}.mp4`} type="video/mp4" />
+              </video>
+              <div className="overlay"></div>
+            </div>
           )
         )}
       </div>
