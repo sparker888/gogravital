@@ -27,15 +27,15 @@ export default function Contact() {
 
   return (
     <div className="bg-black" id="contact">
-      <div className="max-w-xl container mx-auto rounded-3xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-        <div className="relative rounded-3xl bg-slate-700 shadow-xl">
+      <div className="container max-w-xl px-4 py-16 mx-auto rounded-3xl sm:py-24 sm:px-6 lg:px-8">
+        <div className="relative shadow-xl rounded-3xl bg-slate-700">
           <h2 className="sr-only">Contact us</h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-3">
             {/* Contact information */}
-            <div className="relative overflow-hidden rounded-l-3xl bg-gradient-to-t from-slate-900 to-sky-900 bg-cover py-10 px-6 sm:px-10 xl:p-12">
+            <div className="relative px-6 py-10 overflow-hidden bg-cover rounded-l-3xl bg-gradient-to-t from-slate-900 to-sky-900 sm:px-10 xl:p-12">
               <div
-                className="pointer-events-none absolute inset-0 sm:hidden"
+                className="absolute inset-0 pointer-events-none sm:hidden"
                 aria-hidden="true"
               ></div>
               <div className="text-center">
@@ -51,15 +51,15 @@ export default function Contact() {
                 />
               </div>
               <h2 className="pt-2 text-center lg:pt-4 xl:pt-6">
-                <span className="font-logo text-3xl font-bold tracking-tighter text-sky-600 md:text-4xl">
+                <span className="text-3xl font-bold tracking-tighter font-logo text-sky-600 md:text-4xl">
                   Gravital
                 </span>
                 {""}
-                <span className="font-logo text-3xl font-bold tracking-tighter text-amber-600 md:text-4xl">
+                <span className="text-3xl font-bold tracking-tighter font-logo text-amber-600 md:text-4xl">
                   Digital
                 </span>
               </h2>
-              <p className="max-w-3xl mt-6 font-body text-base leading-loose text-sky-200">
+              <p className="max-w-3xl mt-6 text-base leading-loose font-body text-sky-200">
                 For the quickest response, please use this contact form. If
                 calling, please leave a message and I'll get back to you ASAP.
                 Thank you!
@@ -70,7 +70,7 @@ export default function Contact() {
                 </dt>
                 <dd className="flex text-base text-sky-200">
                   <PhoneIcon
-                    className="h-6 w-6 flex-shrink-0 text-sky-600"
+                    className="flex-shrink-0 w-6 h-6 text-sky-600"
                     aria-hidden="true"
                   />
                   <span className="ml-3 font-body">407-710-5497</span>
@@ -80,7 +80,7 @@ export default function Contact() {
                 </dt>
                 <dd className="flex text-base text-sky-200">
                   <MailIcon
-                    className="h-6 w-6 flex-shrink-0 text-amber-600"
+                    className="flex-shrink-0 w-6 h-6 text-amber-600"
                     aria-hidden="true"
                   />
                   <span className="ml-3 font-body">go@gravitaldigital.com</span>
@@ -90,12 +90,12 @@ export default function Contact() {
                 </dt>
                 <dd className="flex text-base text-sky-200">
                   <CalendarIcon
-                    className="h-6 w-6 flex-shrink-0 text-amber-600"
+                    className="flex-shrink-0 w-6 h-6 text-amber-600"
                     aria-hidden="true"
                   />
                   <a
                     className="group text-amber-600 hover:text-sky-200"
-                    href="https://calendly.com/sparker888/"
+                    href="https://calendly.com/book-sparker888/30min"
                   >
                     <span className="ml-3 font-body">
                       Book a 30-min. meeting
@@ -108,7 +108,7 @@ export default function Contact() {
             {/* Contact form */}
             <BgImage
               image={pluginImage}
-              className="overflow-hidden rounded-r-3xl py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12"
+              className="px-6 py-10 overflow-hidden rounded-r-3xl sm:px-10 lg:col-span-2 xl:p-12"
             >
               <form
                 name="contact"
@@ -116,7 +116,7 @@ export default function Contact() {
                 method="POST"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
-                className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+                className="grid grid-cols-1 mt-6 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
                 action="/thanks"
               >
                 <input type="hidden" name="form-name" value="contact" />
@@ -128,7 +128,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="first-name"
-                    className="text-medium block pl-2 font-medium text-sky-300"
+                    className="block pl-2 font-medium text-medium text-sky-300"
                   >
                     First name
                   </label>
@@ -138,14 +138,14 @@ export default function Contact() {
                       name="first-name"
                       id="first-name"
                       autoComplete="given-name"
-                      className="block w-full rounded-md border-slate-400 py-3 px-4 text-slate-900 shadow-sm focus:border-amber-400 focus:ring-amber-400"
+                      className="block w-full px-4 py-3 rounded-md shadow-sm border-slate-400 text-slate-900 focus:border-amber-400 focus:ring-amber-400"
                     />
                   </div>
                 </div>
                 <div>
                   <label
                     htmlFor="last-name"
-                    className="text-medium block pl-2 font-medium text-sky-300"
+                    className="block pl-2 font-medium text-medium text-sky-300"
                   >
                     Last name
                   </label>
@@ -155,14 +155,14 @@ export default function Contact() {
                       name="last-name"
                       id="last-name"
                       autoComplete="family-name"
-                      className="block w-full rounded-md border-slate-400 py-3 px-4 text-slate-900 shadow-sm focus:border-amber-400 focus:ring-amber-400"
+                      className="block w-full px-4 py-3 rounded-md shadow-sm border-slate-400 text-slate-900 focus:border-amber-400 focus:ring-amber-400"
                     />
                   </div>
                 </div>
                 <div>
                   <label
                     htmlFor="email"
-                    className="text-medium block pl-2 font-medium text-sky-300"
+                    className="block pl-2 font-medium text-medium text-sky-300"
                   >
                     Email
                   </label>
@@ -172,7 +172,7 @@ export default function Contact() {
                       name="email"
                       type="email"
                       autoComplete="email"
-                      className="block w-full rounded-md border-slate-400 py-3 px-4 text-slate-900 shadow-sm focus:border-amber-400 focus:ring-amber-400"
+                      className="block w-full px-4 py-3 rounded-md shadow-sm border-slate-400 text-slate-900 focus:border-amber-400 focus:ring-amber-400"
                     />
                   </div>
                 </div>
@@ -180,13 +180,13 @@ export default function Contact() {
                   <div className="flex justify-between">
                     <label
                       htmlFor="phone"
-                      className="text-medium block pl-2 font-medium text-sky-300"
+                      className="block pl-2 font-medium text-medium text-sky-300"
                     >
                       Phone
                     </label>
                     <span
                       id="phone-optional"
-                      className="text-medium pl-2 text-amber-200"
+                      className="pl-2 text-medium text-amber-200"
                     >
                       Optional
                     </span>
@@ -197,7 +197,7 @@ export default function Contact() {
                       name="phone"
                       id="phone"
                       autoComplete="tel"
-                      className="block w-full rounded-md border-slate-400 py-3 px-4 text-slate-900 shadow-sm focus:border-amber-400 focus:ring-amber-400"
+                      className="block w-full px-4 py-3 rounded-md shadow-sm border-slate-400 text-slate-900 focus:border-amber-400 focus:ring-amber-400"
                       aria-describedby="phone-optional"
                     />
                   </div>
@@ -205,7 +205,7 @@ export default function Contact() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="subject"
-                    className="text-medium block pl-2 font-medium text-sky-300"
+                    className="block pl-2 font-medium text-medium text-sky-300"
                   >
                     Subject
                   </label>
@@ -214,7 +214,7 @@ export default function Contact() {
                       type="text"
                       name="subject"
                       id="subject"
-                      className="block w-full rounded-md border-slate-400 py-3 px-4 text-slate-900 shadow-sm focus:border-amber-400 focus:ring-amber-400"
+                      className="block w-full px-4 py-3 rounded-md shadow-sm border-slate-400 text-slate-900 focus:border-amber-400 focus:ring-amber-400"
                     />
                   </div>
                 </div>
@@ -222,13 +222,13 @@ export default function Contact() {
                   <div className="flex justify-between">
                     <label
                       htmlFor="message"
-                      className="text-medium block pl-2 font-medium text-sky-300"
+                      className="block pl-2 font-medium text-medium text-sky-300"
                     >
                       Message
                     </label>
                     <span
                       id="message-max"
-                      className="text-medium pl-2 text-amber-200"
+                      className="pl-2 text-medium text-amber-200"
                     >
                       Max. 500 characters
                     </span>
@@ -238,7 +238,7 @@ export default function Contact() {
                       id="message"
                       name="message"
                       rows={4}
-                      className="block w-full rounded-md border border-slate-400 py-3 px-4 text-slate-900 shadow-sm focus:border-amber-400 focus:ring-amber-400"
+                      className="block w-full px-4 py-3 border rounded-md shadow-sm border-slate-400 text-slate-900 focus:border-amber-400 focus:ring-amber-400"
                       aria-describedby="message-max"
                       defaultValue={""}
                     />
@@ -247,7 +247,7 @@ export default function Contact() {
                 <div className="sm:col-span-2 sm:flex sm:justify-end">
                   <button
                     type="submit"
-                    className="inline-block rounded-full border border-transparent bg-sky-600 py-2 px-4 font-sans text-base font-medium text-amber-50 transition duration-500 hover:bg-sky-900 hover:text-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 sm:w-auto"
+                    className="inline-block px-4 py-2 font-sans text-base font-medium transition duration-500 border border-transparent rounded-full bg-sky-600 text-amber-50 hover:bg-sky-900 hover:text-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 sm:w-auto"
                   >
                     Send Message
                   </button>
