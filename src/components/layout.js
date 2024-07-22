@@ -4,7 +4,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Seo from "./seo"
 import Header from "./header"
 import Footer from "./footer"
-import { Helmet } from "react-helmet"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -27,13 +26,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Helmet>
-        <script
-          defer
-          data-domain="gravitaldigital.com"
-          src="https://plausible.io/js/script.js"
-        ></script>
-      </Helmet>
       <Seo
         title={title}
         description={description}
