@@ -35,6 +35,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-plausible`,
+      options: {
+        domain: `gravitaldigital.com`,
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: `images`,

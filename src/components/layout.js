@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Seo from "./seo"
 import Header from "./header"
 import Footer from "./footer"
+import { usePlausible } from "gatsby-plugin-plausible"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -23,6 +24,8 @@ const Layout = ({ children }) => {
 
   const { title, description, siteUrl, publicURL, twitterUsername } =
     data.site.siteMetadata
+
+  const plausible = usePlausible()  
 
   return (
     <>
