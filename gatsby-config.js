@@ -81,15 +81,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-google-tagmanager",
-      options: {
-        id: "GTM-TCK3QP",
-        includeInDevelopment: false,
-        defaultDataLayer: { platform: `gatsby` },
-        enableWebVitalsTracking: true,
-      },
-    },
-    {
       resolve: "gatsby-plugin-anchor-links",
       options: {
         offset: -100,
