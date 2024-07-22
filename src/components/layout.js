@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Seo from "./seo"
 import Header from "./header"
 import Footer from "./footer"
-import { usePlausible } from "gatsby-plugin-plausible"
+import { Helmet } from "react-helmet"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,10 +25,15 @@ const Layout = ({ children }) => {
   const { title, description, siteUrl, publicURL, twitterUsername } =
     data.site.siteMetadata
 
-  const plausible = usePlausible()  
-
   return (
     <>
+      <Helmet>
+        <script
+          defer
+          data-domain="gravitaldigital.com"
+          src="https://plausible.io/js/script.js"
+        ></script>
+      </Helmet>
       <Seo
         title={title}
         description={description}
