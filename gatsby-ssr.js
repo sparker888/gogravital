@@ -1,7 +1,7 @@
 import React from "react"
 
-export const onRenderBody = ({ setPostBodyComponents }) => {
-  setPostBodyComponents([
+export const onRenderBody = ({ setHeadComponents }) => {
+  setHeadComponents([
     <script
       key="plausible"
       async
