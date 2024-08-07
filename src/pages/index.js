@@ -31,7 +31,10 @@ const Home = () => {
   return (
     <Layout>
       <>
-        <Seo />
+        <Seo
+          title="Gravital Digital | Website Producer Stephen Parker"
+          description="Light. Speed. websites and apps powered by Jamstack for incredible performance."
+        />
         <div className="max-w-xl bg-black">
           <Banner />
           <Hero className="video-container" />

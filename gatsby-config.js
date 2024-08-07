@@ -10,11 +10,10 @@ module.exports = {
     locale: `en`,
     title: `Gravital Digital | Website Producer Stephen Parker`,
     titleTemplate: `Gravital Digital | Website Producer Stephen Parker`,
-    description: `Light. Speed. websites powered by Jamstack for high performance.`,
-    siteUrl: `https://www.gravitaldigital.com`, // No trailing slash allowed!
+    description: `Light. Speed. websites and apps powered by Jamstack for incredible performance.`,
+    siteUrl: `https://gravitaldigital.com`, // No trailing slash allowed!
     twitterUsername: `@gogravital`,
-    publicURL: `/gogravital-social-card.png`,
-    publicURL: `https://www.gravitaldigital.com/gogravital-social-card.png`,
+    publicURL: `https://gravitaldigital.com/gogravital-social-card.png`,
     organization: `Gravital Digital`,
     author: `@gogravital`,
   },
