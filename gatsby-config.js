@@ -14,6 +14,7 @@ module.exports = {
     siteUrl: `https://www.gravitaldigital.com`, // No trailing slash allowed!
     twitterUsername: `@gogravital`,
     publicURL: `/gogravital-social-card.png`,
+    publicURL: `https://www.gravitaldigital.com/gogravital-social-card.png`,
     organization: `Gravital Digital`,
     author: `@gogravital`,
   },
