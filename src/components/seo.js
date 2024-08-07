@@ -19,9 +19,9 @@ const Seo = ({ title, description, publicURL }) => {
   } = site.siteMetadata
 
   const seo = {
-    title: title || defaultTitle, 
+    title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${siteUrl}${publicURL || defaultImage}`,
+    image: publicURL || defaultImage,
     organization: organization,
     url: `${siteUrl}${pathname}`,
   }
