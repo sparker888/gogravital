@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+import { Seo } from "../components/seo"
 import ScrollButton from "../components/scrollup"
 import Banner from "../components/banner"
 import Hero from "../components/hero"
@@ -30,39 +30,33 @@ import Contact from "../components/contact"
 const Home = () => {
   return (
     <Layout>
-      <>
-        <Seo
-          title="Gravital Digital | Website Producer Stephen Parker"
-          description="Light. Speed. websites and apps powered by Jamstack for incredible performance."
-        />
-        <div className="max-w-xl bg-black">
-          <Banner />
-          <Hero className="video-container" />
-          <ScrollButton />
-          <Potential />
-          <Speed />
-          <Flexibility />
-          <Reliability />
-          <Webuild />
-          <Traffic />
-          <Conversions />
-          <Perfectmarketers />
-          <Contentanywhere />
-          <Servicesanywhere />
-          <ReliableCDN />
-          <Zerozero />
-          <Zerocosts />
-          <Supercharge />
-          <Ecommsites />
-          <Contentsites />
-          <Servicesites />
-          <Upgrade />
-          <Technologies />
-          <Services />
-          <Testimonials />
-          <Contact />
-        </div>
-      </>
+      <div className="max-w-xl bg-black">
+        <Banner />
+        <Hero className="video-container" />
+        <ScrollButton />
+        <Potential />
+        <Speed />
+        <Flexibility />
+        <Reliability />
+        <Webuild />
+        <Traffic />
+        <Conversions />
+        <Perfectmarketers />
+        <Contentanywhere />
+        <Servicesanywhere />
+        <ReliableCDN />
+        <Zerozero />
+        <Zerocosts />
+        <Supercharge />
+        <Ecommsites />
+        <Contentsites />
+        <Servicesites />
+        <Upgrade />
+        <Technologies />
+        <Services />
+        <Testimonials />
+        <Contact />
+      </div>
     </Layout>
   )
 }

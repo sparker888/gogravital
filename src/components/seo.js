@@ -1,74 +1,56 @@
 import React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
+import { useLocation } from "@reach/router"
 
-const Seo = ({ title, description, publicURL }) => {
+export const Seo = ({ title, description, image, children }) => {
   const { pathname } = useLocation()
   const { site } = useStaticQuery(query)
 
   const {
     defaultTitle,
-    titleTemplate,
     defaultDescription,
-    defaultImage,
     siteUrl,
-    organization,
+    defaultImage,
     twitterUsername,
   } = site.siteMetadata
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${siteUrl}${publicURL || defaultImage}`,
-    organization: organization,
+    image: `${siteUrl}${image || defaultImage}`,
     url: `${siteUrl}${pathname}`,
+    twitterUsername,
   }
 
   return (
-    <Helmet title={seo.title} titleTemplate={titleTemplate}>
-      <html lang="en" />
+    <>
+      <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
-      <meta property="og:url" content={seo.url} />
       <meta property="og:title" content={seo.title} />
       <meta property="og:description" content={seo.description} />
       <meta property="og:image" content={seo.image} />
+      <meta property="og:url" content={seo.url} />
       <meta property="og:type" content="website" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content={twitterUsername} />
+      <meta name="twitter:creator" content={seo.twitterUsername} />
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={seo.image} />
-    </Helmet>
+      {children}
+    </>
   )
 }
 
-export default Seo
-
-Seo.propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string,
-  publicURL: PropTypes.string,
-}
-
-Seo.defaultProps = {
-  title: null,
-  description: null,
-  publicURL: null,
-}
-
 const query = graphql`
-  query Seo {
+  query SEO {
     site {
       siteMetadata {
         defaultTitle: title
         titleTemplate
         defaultDescription: description
         siteUrl
-        defaultImage: publicURL
-        organization
+        defaultImage: image
         twitterUsername
       }
     }

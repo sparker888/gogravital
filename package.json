@@ -29,7 +29,6 @@
     "gatsby-plugin-netlify": "5.1.1",
     "gatsby-plugin-plausible": "0.0.7",
     "gatsby-plugin-purgecss": "^6.1.2",
-    "gatsby-plugin-react-helmet": "5.20.0",
     "gatsby-plugin-sharp": "^4.16.0",
     "gatsby-source-filesystem": "^4.16.0",
     "gatsby-transformer-sharp": "^4.16.0",
@@ -37,7 +36,6 @@
     "gsap": "^3.9.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-helmet": "6.1.0",
     "react-scrollup-lite": "^0.4.0"
   },
   "devDependencies": {

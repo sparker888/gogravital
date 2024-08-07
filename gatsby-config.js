@@ -1,24 +1,24 @@
 require(`dotenv`).config()
 
 const path = require("path")
+
 module.exports = {
   siteMetadata: {
+    title: `Gravital Digital | Website Producer Stephen Parker`,
+    titleTemplate: `%s | Gravital Digital`,
+    description: `Light. Speed. websites and apps powered by Jamstack for incredible performance.`,
+    siteUrl: `https://gravitaldigital.com`, // No trailing slash allowed!
+    image: `/gogravital-social-card.png`, // This should be relative to the static folder
+    twitterUsername: `@gogravital`,
+    author: `@gogravital`,
+    organization: `Gravital Digital`,
+    locale: `en`,
     links: {
       facebook: `https://www.facebook.com/gogravital/`,
       twitter: `https://twitter.com/gogravital/`,
     },
-    locale: `en`,
-    title: `Gravital Digital | Website Producer Stephen Parker`,
-    titleTemplate: `Gravital Digital | Website Producer Stephen Parker`,
-    description: `Light. Speed. websites and apps powered by Jamstack for incredible performance.`,
-    siteUrl: `https://gravitaldigital.com`, // No trailing slash allowed!
-    twitterUsername: `@gogravital`,
-    publicURL: `https://gravitaldigital.com/gogravital-social-card.png`,
-    organization: `Gravital Digital`,
-    author: `@gogravital`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
