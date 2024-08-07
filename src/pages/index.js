@@ -62,3 +62,10 @@ const Home = () => {
 }
 
 export default Home
+
+export const Head = () => (
+  <Seo
+    title="Gravital Digital | Website Producer Stephen Parker"
+    description="Light. Speed. websites and apps powered by Jamstack for incredible performance."
+  />
+)
