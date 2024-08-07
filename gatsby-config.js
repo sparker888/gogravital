@@ -8,7 +8,7 @@ module.exports = {
     titleTemplate: `%s | Gravital Digital`,
     description: `Light. Speed. websites and apps powered by Jamstack for incredible performance.`,
     siteUrl: `https://gravitaldigital.com`, // No trailing slash allowed!
-    image: `/gogravital-social-card.png`, // This should be relative to the static folder
+    image: `gogravital-social-card.png`, // This should be relative to the static folder
     twitterUsername: `@gogravital`,
     author: `@gogravital`,
     organization: `Gravital Digital`,
