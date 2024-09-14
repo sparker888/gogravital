@@ -29,6 +29,24 @@ export default function PageNotFound() {
                 >
                   Google?
                 </a>
+                <a
+                  href="https://sparker888.com/"
+                  className="med:text-base inline-flex items-center rounded-md border border-transparent bg-sky-600 px-4 py-2 text-sm font-medium text-slate-50 shadow-sm hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 lg:text-xl"
+                >
+                  sparker888.com?
+                </a>
+                <a
+                  href="https://gravital-wri-case-study.netlify.app/"
+                  className="med:text-base inline-flex items-center rounded-md border border-transparent bg-sky-600 px-4 py-2 text-sm font-medium text-slate-50 shadow-sm hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 lg:text-xl"
+                >
+                  My latest case study?
+                </a>
+                <a
+                  href="https://openai.com/"
+                  className="med:text-base inline-flex items-center rounded-md border border-transparent bg-sky-600 px-4 py-2 text-sm font-medium text-slate-50 shadow-sm hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 lg:text-xl"
+                >
+                  OpenAI?
+                </a>
               </div>
             </div>
           </main>
